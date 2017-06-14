@@ -18,7 +18,7 @@ script:
   - make INSTALL_ROOT=appdir install ; find appdir/
   - # Dear upstream, please install to more standard locations
   - mkdir -p appdir/usr/bin ; mv appdir/usr/lib/filmulator-gui/filmulator-gui appdir/usr/bin/
-  - mkdir -p appdir/usr/bin/qml/filmulator-gui ; mv appdir/usr/lib/filmulator-gui/qml/filmulator-gui/* appdir/usr/bin/qml/filmulator-gui
+  - mkdir -p appdir/usr/bin/qml/filmulator-gui ; mv appdir/usr/lib/filmulator-gui/qml/filmulator-gui/* appdir/usr/bin/qml/filmulator-gui/
   - rm -rf appdir/usr/lib/filmulator-gui/
   - mkdir -p appdir/usr/share/applications/ ; cp filmulator-gui.desktop.in appdir/usr/share/applications/filmulator-gui.desktop
   - sed -i -e 's|^Exec=.*|Exec=filmulator-gui|g' appdir/usr/share/applications/filmulator-gui.desktop
